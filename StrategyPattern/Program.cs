@@ -1,4 +1,6 @@
-﻿using System;
+﻿using StrategyPattern.FlyBeheviours;
+using StrategyPattern.QuackBeheviours;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +12,10 @@ namespace StrategyPattern
     {
         static void Main(string[] args)
         {
+
+            WildDuck duck = new WildDuck(new DuckFlying(), new WildDuckQuacking());
+            duck.MakeFly();
+            duck.MakeQuack();
             Console.WriteLine("Hello World");
             Console.ReadKey();
         }

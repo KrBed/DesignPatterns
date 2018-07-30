@@ -8,18 +8,18 @@ namespace StrategyPattern
 {
     public abstract class Duck
     {
-        IFlyBehaviour flyingBehaviour;
-        IQuackBehaviour quackingBehaviour;
+        protected IFlyBehaviour flyingBehaviour;
+        protected IQuackBehaviour quackingBehaviour;
 
         public abstract void Display();
 
         public void MakeFly()
         {
-            flyingBehaviour.Fly();
+            this.flyingBehaviour.Fly();
         }
         public void MakeQuack()
         {
-            quackingBehaviour.Quack();
+            this.quackingBehaviour.Quack();
         }
         public void SetFly(IFlyBehaviour flyBehaviour)
         {
