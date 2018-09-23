@@ -13,13 +13,30 @@ namespace StrategyPattern
 
         public abstract void Display();
 
-        public void MakeFly()
+        public  void MakeFly()
         {
-            this.flyingBehaviour.Fly();
+            try
+            {
+                this.flyingBehaviour.Fly();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e + " there is no implementation of duck fly");               
+            }
+           
         }
         public void MakeQuack()
         {
-            this.quackingBehaviour.Quack();
+            try
+            {
+                this.quackingBehaviour.Quack();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e + "there is no flying implementation");
+               
+            }
+         
         }
         public void SetFly(IFlyBehaviour flyBehaviour)
         {

@@ -45,6 +45,7 @@
     <Compile Include="Duck.cs" />
     <Compile Include="FlyBeheviours\DuckFlying.cs" />
     <Compile Include="FlyBeheviours\NoFlying.cs" />
+    <Compile Include="HomeDuck.cs" />
     <Compile Include="IFlyBehaviour.cs" />
     <Compile Include="IQuackBehaviour.cs" />
     <Compile Include="Program.cs" />

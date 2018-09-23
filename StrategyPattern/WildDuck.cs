@@ -12,6 +12,7 @@ namespace StrategyPattern
         //private IQuackBehaviour _qb;
         public WildDuck(IFlyBehaviour fb , IQuackBehaviour qb)
         {
+
             flyingBehaviour = fb;
             quackingBehaviour = qb;
         }
